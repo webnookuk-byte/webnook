@@ -105,6 +105,19 @@ h1, h2, h3 {
 
 .text-center { text-align: center; }
 
+/* ── ABOUT / STATS GRIDS (index.html "What we do") ──── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+}
+
 /* ── 4. FADE-IN ANIMATION ─────────────────────────────── */
 .fade-in {
   opacity: 0;
@@ -1142,8 +1155,9 @@ h1, h2, h3 {
 }
 
 @media (max-width: 560px) {
+  .comparison-table { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .comparison-header,
-  .comparison-row { grid-template-columns: 1fr repeat(3, 72px); }
+  .comparison-row { min-width: 460px; grid-template-columns: 1fr repeat(3, 100px); }
   .comparison-row__name { font-size: 12px; }
 }
 
@@ -1487,16 +1501,19 @@ a.contact-info-item__value:hover { color: var(--blue); }
   .container { padding: 0 32px; }
   .site-nav__inner { padding: 0 32px; }
   .trust-strip__inner { padding: 0 32px; }
+  .page-hero__inner { padding: 0 32px; }
   .site-footer__inner { padding: 0 32px; }
   .site-footer__top { grid-template-columns: 1fr; gap: 40px; }
   .work-grid { grid-template-columns: 1fr 1fr; }
   .contact-layout { grid-template-columns: 1fr; gap: 48px; padding: 64px 32px; }
+  .about-grid { gap: 48px; }
 }
 
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none; }
   .hamburger { display: flex; }
 
+  .about-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
   .process-grid { grid-template-columns: 1fr 1fr; }
   .why-grid { grid-template-columns: 1fr; }
@@ -1508,6 +1525,8 @@ a.contact-info-item__value:hover { color: var(--blue); }
 
   .hero__content { padding: 60px 0; }
   .section { padding: 64px 0; }
+  .section--sm { padding: 48px 0; }
+  .section--lg { padding: 80px 0; }
 }
 
 @media (max-width: 560px) {
@@ -1515,10 +1534,15 @@ a.contact-info-item__value:hover { color: var(--blue); }
   .container { padding: 0 20px; }
   .site-nav__inner { padding: 0 20px; }
   .trust-strip__inner { padding: 0 20px; }
+  .page-hero__inner { padding: 0 20px; }
   .site-footer__inner { padding: 0 20px; }
 
+  .page-hero { padding: 64px 0 40px; }
   .hero__actions { flex-direction: column; align-items: flex-start; }
   .process-grid { grid-template-columns: 1fr; }
   .form-row--two { grid-template-columns: 1fr; }
   .contact-layout { padding: 48px 20px; }
+  .section--lg { padding: 56px 0; }
+  .section--sm { padding: 36px 0; }
+  .care-plan { padding: 28px 20px; }
 }
