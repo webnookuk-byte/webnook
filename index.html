@@ -3,8 +3,87 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Webnook — Small business websites, done properly. Fast, clean websites built for UK small businesses."/>
-  <title>Webnook — Small Business Websites</title>
+
+  <!-- Primary meta -->
+  <title>Webnook | Hand-Coded Websites for UK Small Businesses</title>
+  <meta name="description" content="Webnook builds fast, hand-coded websites for UK small businesses. One-off prices from £349 — no subscriptions, no page builders, no bloat. Delivered in days."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://webnook.co.uk/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://webnook.co.uk/"/>
+  <meta property="og:title" content="Webnook | Hand-Coded Websites for UK Small Businesses"/>
+  <meta property="og:description" content="Fast, clean, hand-coded websites for UK small businesses. One-off prices from £349 — hosting included, no monthly fees, delivered in days."/>
+  <meta property="og:image" content="https://webnook.co.uk/images/og-image.png"/>
+  <meta property="og:locale" content="en_GB"/>
+  <meta property="og:site_name" content="Webnook"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Webnook | Hand-Coded Websites for UK Small Businesses"/>
+  <meta name="twitter:description" content="Fast, clean, hand-coded websites for UK small businesses. One-off prices from £349 — hosting included, no monthly fees, delivered in days."/>
+  <meta name="twitter:image" content="https://webnook.co.uk/images/og-image.png"/>
+
+  <!-- Structured data: WebSite + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://webnook.co.uk/#website",
+        "url": "https://webnook.co.uk/",
+        "name": "Webnook",
+        "description": "Hand-coded websites for UK small businesses",
+        "inLanguage": "en-GB"
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://webnook.co.uk/#business",
+        "name": "Webnook",
+        "url": "https://webnook.co.uk/",
+        "logo": "https://webnook.co.uk/images/logo.png",
+        "image": "https://webnook.co.uk/images/og-image.png",
+        "description": "Webnook is a UK-based web studio that builds fast, hand-coded websites for small businesses. One-off packages from £349 with hosting included.",
+        "email": "hello@webnook.co.uk",
+        "areaServed": "GB",
+        "currenciesAccepted": "GBP",
+        "priceRange": "££",
+        "serviceType": "Web Design and Development",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Website Build Packages",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Starter Website",
+              "price": "349",
+              "priceCurrency": "GBP",
+              "description": "Single-page hand-coded website for small businesses"
+            },
+            {
+              "@type": "Offer",
+              "name": "Business Website",
+              "price": "699",
+              "priceCurrency": "GBP",
+              "description": "Multi-page hand-coded website for small businesses, up to 5 pages"
+            },
+            {
+              "@type": "Offer",
+              "name": "Growth Website",
+              "price": "1199",
+              "priceCurrency": "GBP",
+              "description": "Larger hand-coded website with booking and payment integrations, 6+ pages"
+            }
+          ]
+        },
+        "sameAs": []
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet"/>
@@ -16,7 +95,7 @@
   <header class="site-nav" role="banner">
     <div class="site-nav__inner">
       <a href="index.html" class="nav-brand" aria-label="Webnook home">
-        <img src="images/logo.png" width="32" height="32" alt="Webnook logo"/>
+        <img src="images/logo.png" width="32" height="32" alt="Webnook logo mark"/>
         webnook
       </a>
 
@@ -48,7 +127,7 @@
     </div>
   </div>
 
-  <main>
+  <main id="main-content">
 
     <!-- ── HERO ── -->
     <section class="hero" aria-label="Hero">
@@ -64,7 +143,7 @@
             Small business websites,<br><em>done properly.</em>
           </h1>
           <p class="hero__sub fade-in delay-2">
-            We build fast, clean websites for UK small businesses — no complexity, no bloat, just a great-looking site that works hard for you.
+            We build fast, hand-coded websites for UK small businesses — no page builders, no bloat, just a great-looking site that works hard for you.
           </p>
           <div class="hero__actions fade-in delay-3">
             <a href="#work" class="btn btn-blue">See our work</a>
@@ -112,14 +191,14 @@
     </div>
 
     <!-- ── WHAT WE DO ── -->
-    <section class="section section--white" aria-label="About Webnook">
+    <section class="section section--white" aria-labelledby="about-heading">
       <div class="container">
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
           <div class="fade-in">
             <span class="eyebrow">What we do</span>
-            <h2 class="section-heading">Your business online — <em>beautifully simple.</em></h2>
+            <h2 class="section-heading" id="about-heading">Your business online — <em>beautifully simple.</em></h2>
             <p class="section-sub" style="margin-bottom:24px;">
-              We build lightweight, handcrafted websites for small businesses. No page-builders, no bloated CMS, no ongoing subscriptions — just clean code that loads fast and looks great on every device.
+              We build lightweight, hand-coded websites for small businesses. No page builders, no bloated CMS, no ongoing subscriptions — just clean HTML, CSS, and JavaScript that loads fast and looks great on every device.
             </p>
             <p class="section-sub" style="margin-bottom:36px;">
               Every site comes with hosting, a custom domain, and SSL included. Your clients find you. You keep more of what you earn.
@@ -146,11 +225,11 @@
     </section>
 
     <!-- ── SERVICES ── -->
-    <section class="section section--surface" id="services" aria-label="Services and packages">
+    <section class="section section--surface" id="services" aria-labelledby="services-heading">
       <div class="container">
         <div class="text-center fade-in">
           <span class="eyebrow--mid eyebrow">Packages</span>
-          <h2 class="section-heading">The right site for every business.</h2>
+          <h2 class="section-heading" id="services-heading">The right site for every business.</h2>
           <p class="section-sub section-sub--center">Simple, transparent packages. Every site is hand-built, mobile-first, and delivered ready to go live.</p>
         </div>
 
@@ -158,7 +237,7 @@
 
           <!-- Starter -->
           <div class="service-card">
-            <div class="service-card__name">Starter</div>
+            <div class="service-card__name">Starter — from £349</div>
             <div class="service-card__desc">Perfect for getting your business online quickly with everything you need to make a great first impression.</div>
             <div class="service-card__divider"></div>
             <ul class="service-card__features">
@@ -180,7 +259,7 @@
           <!-- Business (featured) -->
           <div class="service-card service-card--featured">
             <div class="service-card__badge">Most popular</div>
-            <div class="service-card__name">Business</div>
+            <div class="service-card__name">Business — from £699</div>
             <div class="service-card__desc">A full multi-page website that covers everything a small business needs to convert visitors into customers.</div>
             <div class="service-card__divider"></div>
             <ul class="service-card__features">
@@ -201,7 +280,7 @@
 
           <!-- Growth -->
           <div class="service-card">
-            <div class="service-card__name">Growth</div>
+            <div class="service-card__name">Growth — from £1,199</div>
             <div class="service-card__desc">For businesses that need more — booking systems, payment links, or a larger site with more pages and features.</div>
             <div class="service-card__divider"></div>
             <ul class="service-card__features">
@@ -223,30 +302,30 @@
         </div>
 
         <p class="fade-in" style="text-align:center; margin-top:28px; font-size:13px; color:var(--light);">
-          Domain registration is separate (typically ~£12/yr for a .co.uk).
+          Domain registration is separate (typically ~£12/yr for a .co.uk). <a href="pricing.html" style="color:var(--blue);">See full pricing details &rarr;</a>
         </p>
       </div>
     </section>
 
     <!-- ── OUR WORK ── -->
-    <section class="section section--white" id="work" aria-label="Portfolio">
+    <section class="section section--white" id="work" aria-labelledby="work-heading">
       <div class="container">
         <div class="fade-in">
           <span class="eyebrow">Our work</span>
-          <h2 class="section-heading">Sites we've built.</h2>
+          <h2 class="section-heading" id="work-heading">Sites we've built.</h2>
           <p class="section-sub">Every project is hand-coded from scratch, built to perform and designed to reflect each business's personality.</p>
         </div>
 
         <div class="work-grid">
           <div class="work-card fade-in delay-1">
             <div class="work-card__thumb">
-              <img src="images/thumb-bigbark.png" alt="Big Bark website screenshot"/>
+              <img src="images/thumb-bigbark.png" alt="Big Bark dog walking website — homepage screenshot showing services and contact form" width="400" height="200" loading="lazy"/>
             </div>
             <div class="work-card__body">
               <div class="work-card__category">Pet services</div>
               <div class="work-card__title">Big Bark</div>
               <p class="work-card__desc">A clean, friendly site for a dog walking and pet care business — services, contact form, and local SEO focus.</p>
-              <a href="https://bigbark.co.uk" class="work-card__link" target="_blank" rel="noopener">
+              <a href="https://bigbark.co.uk" class="work-card__link" target="_blank" rel="noopener noreferrer">
                 Visit site
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
                   <path d="M1 11L11 1M11 1H5M11 1v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -257,13 +336,13 @@
 
           <div class="work-card fade-in delay-2">
             <div class="work-card__thumb">
-              <img src="images/thumb-welshcoastpizza.png" alt="Welsh Coast Pizza Co. website screenshot"/>
+              <img src="images/thumb-welshcoastpizza.png" alt="Welsh Coast Pizza Co. website — bold homepage showing menu and events for a wood-fired pizza company" width="400" height="200" loading="lazy"/>
             </div>
             <div class="work-card__body">
               <div class="work-card__category">Food &amp; hospitality</div>
               <div class="work-card__title">Welsh Coast Pizza Co.</div>
               <p class="work-card__desc">A bold, flavourful site for a wood-fired pizza company — menus, events, and a strong visual brand identity.</p>
-              <a href="https://welshcoastpizza.co.uk" class="work-card__link" target="_blank" rel="noopener">
+              <a href="https://welshcoastpizza.co.uk" class="work-card__link" target="_blank" rel="noopener noreferrer">
                 Visit site
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
                   <path d="M1 11L11 1M11 1H5M11 1v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -274,13 +353,13 @@
 
           <div class="work-card fade-in delay-3">
             <div class="work-card__thumb">
-              <img src="images/thumb-withoutaclasp.png" alt="Without a Clasp website screenshot"/>
+              <img src="images/thumb-withoutaclasp.png" alt="Without a Clasp permanent jewellery studio website — elegant editorial homepage showing pricing and booking" width="400" height="200" loading="lazy"/>
             </div>
             <div class="work-card__body">
               <div class="work-card__category">Beauty &amp; wellness</div>
               <div class="work-card__title">Without a Clasp</div>
               <p class="work-card__desc">An elegant, editorial site for a permanent jewellery studio — prices, experience pages, and online booking enquiries.</p>
-              <a href="https://withoutaclasp.co.uk" class="work-card__link" target="_blank" rel="noopener">
+              <a href="https://withoutaclasp.co.uk" class="work-card__link" target="_blank" rel="noopener noreferrer">
                 Visit site
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
                   <path d="M1 11L11 1M11 1H5M11 1v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -293,33 +372,33 @@
     </section>
 
     <!-- ── HOW IT WORKS ── -->
-    <section class="section section--surface" aria-label="How it works">
+    <section class="section section--surface" aria-labelledby="process-heading">
       <div class="container">
         <div class="text-center fade-in">
           <span class="eyebrow--mid eyebrow">The process</span>
-          <h2 class="section-heading">Online in four steps.</h2>
+          <h2 class="section-heading" id="process-heading">Online in four steps.</h2>
           <p class="section-sub section-sub--center">From first conversation to live website, we keep things simple and move fast.</p>
         </div>
 
         <div class="process-grid fade-in delay-1">
           <div class="process-step">
             <div class="process-step__num">01</div>
-            <div class="process-step__title">Brief</div>
+            <h3 class="process-step__title">Brief</h3>
             <p class="process-step__body">Tell us about your business, what you need, and any examples you like. We'll ask the right questions.</p>
           </div>
           <div class="process-step">
             <div class="process-step__num">02</div>
-            <div class="process-step__title">Design</div>
+            <h3 class="process-step__title">Design</h3>
             <p class="process-step__body">We design directly in code — sharing previews quickly so you can see exactly how your site will look and feel.</p>
           </div>
           <div class="process-step">
             <div class="process-step__num">03</div>
-            <div class="process-step__title">Refine</div>
+            <h3 class="process-step__title">Refine</h3>
             <p class="process-step__body">Two rounds of revisions included. We tweak copy, colours, layout — whatever it needs to feel exactly right.</p>
           </div>
           <div class="process-step">
             <div class="process-step__num">04</div>
-            <div class="process-step__title">Launch</div>
+            <h3 class="process-step__title">Launch</h3>
             <p class="process-step__body">We connect your domain, make sure everything looks great, and your site goes live. You get the keys — it's yours.</p>
           </div>
         </div>
@@ -327,11 +406,11 @@
     </section>
 
     <!-- ── WHY WEBNOOK ── -->
-    <section class="section section--white" aria-label="Why choose Webnook">
+    <section class="section section--white" aria-labelledby="why-heading">
       <div class="container">
         <div class="fade-in">
           <span class="eyebrow">Why Webnook</span>
-          <h2 class="section-heading">Built for small businesses. <em>Not everyone else.</em></h2>
+          <h2 class="section-heading" id="why-heading">Built for small businesses. <em>Not everyone else.</em></h2>
         </div>
 
         <div class="why-grid">
@@ -341,7 +420,7 @@
                 <path d="M10 2L12.5 7H18L13.5 10.5L15.5 16L10 12.5L4.5 16L6.5 10.5L2 7H7.5L10 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
               </svg>
             </div>
-            <div class="why-card__title">No bloat, no faff</div>
+            <h3 class="why-card__title">No bloat, no faff</h3>
             <p class="why-card__body">Hand-coded HTML, CSS, and JavaScript — nothing more. Your site loads instantly, doesn't get hacked, and never goes down because a plugin updated itself.</p>
           </div>
           <div class="why-card fade-in delay-2">
@@ -351,7 +430,7 @@
                 <path d="M10 6v4l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </div>
-            <div class="why-card__title">Fast to build, fast to load</div>
+            <h3 class="why-card__title">Fast to build, fast to load</h3>
             <p class="why-card__body">Most sites are live within a week of briefing. And once live, they score highly on Google's performance tests — good for your clients' search rankings.</p>
           </div>
           <div class="why-card fade-in delay-3">
@@ -360,7 +439,7 @@
                 <path d="M3 10a7 7 0 1014 0A7 7 0 003 10zM10 7v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </div>
-            <div class="why-card__title">You own everything</div>
+            <h3 class="why-card__title">You own everything</h3>
             <p class="why-card__body">Your code belongs entirely to you. Walk away any time — no lock-in, no ransom fees, never held hostage by a platform.</p>
           </div>
         </div>
@@ -368,11 +447,11 @@
     </section>
 
     <!-- ── COMPARISON ── -->
-    <section class="section section--surface" aria-label="Webnook vs Squarespace and Wix">
+    <section class="section section--surface" aria-labelledby="comparison-heading">
       <div class="container">
         <div class="text-center fade-in">
           <span class="eyebrow--mid eyebrow">How we compare</span>
-          <h2 class="section-heading">Why not just use <em>Squarespace or Wix?</em></h2>
+          <h2 class="section-heading" id="comparison-heading">Why not just use <em>Squarespace or Wix?</em></h2>
           <p class="section-sub section-sub--center">Page builders are great for some things. But for a small business that wants a fast, professional site without the ongoing cost — here's how we stack up.</p>
         </div>
 
@@ -382,7 +461,7 @@
           <div class="comparison-header">
             <div class="comparison-header__label"></div>
             <div class="comparison-header__col comparison-header__col--featured">
-              <img src="images/logo.png" width="22" height="22" alt="Webnook logo" class="comparison-logo"/>
+              <img src="images/logo.png" width="22" height="22" alt="Webnook" class="comparison-logo"/>
               <span>Webnook</span>
             </div>
             <div class="comparison-header__col">Squarespace</div>
@@ -487,7 +566,7 @@
       <div class="site-footer__top">
         <div>
           <div class="footer-brand">
-            <img src="images/logo.png" width="26" height="26" alt="Webnook logo"/>
+            <img src="images/logo.png" width="26" height="26" alt="Webnook logo mark"/>
             webnook
           </div>
           <p class="footer-tagline">Small business websites, done properly. Hand-crafted, fast, and built to last.</p>
@@ -510,7 +589,7 @@
         </div>
       </div>
       <div class="site-footer__bottom">
-        <span class="footer-copy">&copy; 2026 Webnook. All rights reserved. <a href="#">webnook.co.uk</a></span>
+        <span class="footer-copy">&copy; 2026 Webnook. All rights reserved. <a href="https://webnook.co.uk/">webnook.co.uk</a></span>
       </div>
     </div>
   </footer>

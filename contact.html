@@ -3,8 +3,47 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Get in touch with Webnook — tell us about your business and we'll put together a quote for your new website."/>
-  <title>Contact — Webnook</title>
+
+  <!-- Primary meta -->
+  <title>Get a Quote | Contact Webnook — UK Small Business Web Studio</title>
+  <meta name="description" content="Get in touch with Webnook to discuss your new website. Tell us about your business and we'll reply within one working day with a clear, no-obligation quote."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://webnook.co.uk/contact.html"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://webnook.co.uk/contact.html"/>
+  <meta property="og:title" content="Get a Quote | Contact Webnook — UK Small Business Web Studio"/>
+  <meta property="og:description" content="Get in touch with Webnook to discuss your new website. Tell us about your business and we'll reply within one working day with a clear, no-obligation quote."/>
+  <meta property="og:image" content="https://webnook.co.uk/images/og-image.png"/>
+  <meta property="og:locale" content="en_GB"/>
+  <meta property="og:site_name" content="Webnook"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Get a Quote | Contact Webnook — UK Small Business Web Studio"/>
+  <meta name="twitter:description" content="Get in touch with Webnook to discuss your new website. Tell us about your business and we'll reply within one working day with a clear, no-obligation quote."/>
+  <meta name="twitter:image" content="https://webnook.co.uk/images/og-image.png"/>
+
+  <!-- Structured data: ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": "https://webnook.co.uk/contact.html",
+    "url": "https://webnook.co.uk/contact.html",
+    "name": "Contact Webnook",
+    "description": "Get a no-obligation quote for a hand-coded website for your UK small business.",
+    "inLanguage": "en-GB",
+    "isPartOf": {
+      "@id": "https://webnook.co.uk/#website"
+    },
+    "about": {
+      "@id": "https://webnook.co.uk/#business"
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet"/>
@@ -16,7 +55,7 @@
   <header class="site-nav" role="banner">
     <div class="site-nav__inner">
       <a href="index.html" class="nav-brand" aria-label="Webnook home">
-        <img src="images/logo.png" width="32" height="32" alt="Webnook logo"/>
+        <img src="images/logo.png" width="32" height="32" alt="Webnook logo mark"/>
         webnook
       </a>
 
@@ -48,24 +87,24 @@
     </div>
   </div>
 
-  <main>
+  <main id="main-content">
 
     <!-- ── PAGE HERO ── -->
-    <div class="page-hero" role="banner" aria-label="Contact page header">
+    <div class="page-hero">
       <div class="page-hero__inner">
         <span class="eyebrow--mid eyebrow">Get in touch</span>
         <h1 class="page-hero__title">Let's build something <em>great.</em></h1>
-        <p class="page-hero__sub">Tell us a bit about your business and what you need — we'll come back to you within one working day.</p>
+        <p class="page-hero__sub">Tell us a bit about your business and what you need — we'll come back to you within one working day with a clear, no-obligation quote.</p>
       </div>
     </div>
 
     <!-- ── CONTACT LAYOUT ── -->
-    <section aria-label="Contact form">
+    <section aria-labelledby="contact-form-heading">
       <div class="contact-layout">
 
         <!-- Form column -->
         <div class="fade-in">
-          <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:20px; letter-spacing:-0.02em; color:var(--ink); margin-bottom:8px;">Send us a message</h2>
+          <h2 id="contact-form-heading" style="font-family:'Syne',sans-serif; font-weight:700; font-size:20px; letter-spacing:-0.02em; color:var(--ink); margin-bottom:8px;">Send us a message</h2>
           <p style="font-size:14px; font-weight:300; color:var(--mid); margin-bottom:32px;">Fill in the form and we'll get back to you shortly.</p>
 
           <form class="contact-form" id="contactForm" action="https://formspree.io/f/xyknyjdy" method="POST" novalidate>
@@ -122,9 +161,9 @@
               <div class="select-wrap">
                 <select id="package" name="package">
                   <option value="" disabled selected>Which package interests you?</option>
-                  <option value="starter">Starter — single-page site</option>
-                  <option value="business">Business — multi-page site</option>
-                  <option value="growth">Growth — larger / with extras</option>
+                  <option value="starter">Starter — single-page site (£349)</option>
+                  <option value="business">Business — multi-page site (£699)</option>
+                  <option value="growth">Growth — larger / with extras (£1,199)</option>
                   <option value="unsure">Not sure yet</option>
                 </select>
                 <span class="select-arrow" aria-hidden="true">
@@ -150,7 +189,7 @@
 
           </form>
 
-          <div class="form-success" id="formSuccess" role="alert">
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
               <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/>
               <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -187,7 +226,7 @@
               </div>
               <div>
                 <span class="contact-info-item__label">Website</span>
-                <span class="contact-info-item__value">webnook.co.uk</span>
+                <a href="https://webnook.co.uk/" class="contact-info-item__value">webnook.co.uk</a>
               </div>
             </div>
 
@@ -199,7 +238,7 @@
               </div>
               <div>
                 <span class="contact-info-item__label">Based in</span>
-                <span class="contact-info-item__value">UK</span>
+                <span class="contact-info-item__value">United Kingdom</span>
               </div>
             </div>
           </div>
@@ -234,7 +273,7 @@
       <div class="site-footer__top">
         <div>
           <div class="footer-brand">
-            <img src="images/logo.png" width="26" height="26" alt="Webnook logo"/>
+            <img src="images/logo.png" width="26" height="26" alt="Webnook logo mark"/>
             webnook
           </div>
           <p class="footer-tagline">Small business websites, done properly. Hand-crafted, fast, and built to last.</p>
@@ -257,7 +296,7 @@
         </div>
       </div>
       <div class="site-footer__bottom">
-        <span class="footer-copy">&copy; 2026 Webnook. All rights reserved. <a href="#">webnook.co.uk</a></span>
+        <span class="footer-copy">&copy; 2026 Webnook. All rights reserved. <a href="https://webnook.co.uk/">webnook.co.uk</a></span>
       </div>
     </div>
   </footer>
