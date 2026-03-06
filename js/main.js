@@ -10,12 +10,14 @@ const navLinks  = document.querySelectorAll('.overlay-links a');
 function openMenu() {
   overlay.classList.add('open');
   hamburger.classList.add('open');
+  hamburger.setAttribute('aria-expanded', 'true');
   document.body.style.overflow = 'hidden';
 }
 
 function closeMenu() {
   overlay.classList.remove('open');
   hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
   document.body.style.overflow = '';
 }
 
@@ -69,8 +71,18 @@ document.querySelectorAll('.faq-item__q').forEach(btn => {
   btn.addEventListener('click', () => {
     const item = btn.closest('.faq-item');
     const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-item__q').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  btn.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
   });
 });
 
