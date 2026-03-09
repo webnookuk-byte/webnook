@@ -13,9 +13,9 @@
   --surface:    #F4F4F1;
   --bg:         #FAFAF8;
   --white:      #FFFFFF;
-  --blue:       #1557F5;
-  --blue-hover: #0F48D8;
-  --blue-soft:  #EBF0FF;
+  --blue:       #0077B6;
+  --blue-hover: #005F92;
+  --blue-soft:  #E0F3FF;
 
   --nav-height: 68px;
   --max-width:  1200px;
@@ -56,7 +56,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 .contact-form textarea:focus-visible {
   outline: none;
   border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(21,87,245,0.08);
+  box-shadow: 0 0 0 3px rgba(0,119,182,0.08);
 }
 .faq-item__q:focus-visible { outline-offset: 6px; }
 
@@ -339,7 +339,7 @@ h1, h2, h3 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--blue);
-  border: 1px solid rgba(21,87,245,0.45);
+  border: 1px solid rgba(0,119,182,0.45);
   padding: 14px 40px;
   border-radius: var(--radius);
   transition: all 0.25s;
@@ -374,7 +374,7 @@ h1, h2, h3 {
   transform: translateX(-50%);
   width: 800px;
   height: 500px;
-  background: radial-gradient(ellipse, rgba(21,87,245,0.15) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(0,119,182,0.15) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -460,8 +460,8 @@ h1, h2, h3 {
 .hero__badge svg { color: rgba(255,255,255,0.45); flex-shrink: 0; }
 .hero__badge--highlight {
   color: #fff;
-  background: rgba(21,87,245,0.25);
-  border-color: rgba(21,87,245,0.5);
+  background: rgba(0,119,182,0.25);
+  border-color: rgba(0,119,182,0.5);
 }
 .hero__badge--highlight svg { color: var(--blue); }
 
@@ -1158,8 +1158,8 @@ h1, h2, h3 {
 }
 
 .comparison-row__col--featured {
-  background: rgba(21,87,245,0.04);
-  border-left: 1px solid rgba(21,87,245,0.15);
+  background: rgba(0,119,182,0.04);
+  border-left: 1px solid rgba(0,119,182,0.15);
 }
 
 .comp-tick {
@@ -1568,7 +1568,7 @@ h1, h2, h3 {
 .contact-form select:focus,
 .contact-form textarea:focus {
   border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(21,87,245,0.08);
+  box-shadow: 0 0 0 3px rgba(0,119,182,0.08);
 }
 .contact-form textarea { resize: vertical; min-height: 140px; }
 .contact-form select { appearance: none; cursor: pointer; }
@@ -1597,8 +1597,8 @@ h1, h2, h3 {
   display: none;
   align-items: center;
   gap: 12px;
-  background: rgba(21,87,245,0.06);
-  border: 1px solid rgba(21,87,245,0.2);
+  background: rgba(0,119,182,0.06);
+  border: 1px solid rgba(0,119,182,0.2);
   padding: 18px 22px;
   border-radius: var(--radius);
   font-size: 14px;
