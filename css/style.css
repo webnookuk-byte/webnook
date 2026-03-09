@@ -437,6 +437,34 @@ h1, h2, h3 {
   flex-wrap: wrap;
 }
 
+.hero__badges {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 100px;
+  padding: 5px 12px 5px 8px;
+}
+.hero__badge svg { color: rgba(255,255,255,0.45); flex-shrink: 0; }
+.hero__badge--highlight {
+  color: #fff;
+  background: rgba(21,87,245,0.25);
+  border-color: rgba(21,87,245,0.5);
+}
+.hero__badge--highlight svg { color: var(--blue); }
+
 .hero__scroll {
   position: absolute;
   bottom: 36px;
@@ -570,6 +598,8 @@ h1, h2, h3 {
   line-height: 1.5;
 }
 .service-card--featured .service-card__feature { color: rgba(255,255,255,0.75); }
+.service-card__feature--bold { font-weight: 500; color: var(--ink); }
+.service-card--featured .service-card__feature--bold { color: #fff; }
 .service-card__feature-dot {
   width: 5px;
   height: 5px;
